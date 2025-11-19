@@ -1,0 +1,7 @@
+users:
+- name: nutanix
+  sudo: ['ALL=(ALL) NOPASSWD:ALL']
+  shell: /bin/bash
+  groups: ['wheel', 'docker']
+  ssh_authorized_keys:
+    - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJy0NA1K8MUDDd16KqdkF6DlmEfiOjucy9+wBLkIC4gn kyle.rafaels@XD-W11-0411
