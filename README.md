@@ -14,8 +14,8 @@
 export ANSIBLE_REMOTE_USER=nutanix
 export ANSIBLE_PASSWORD="nutanix/4u"
 export PKR_VAR_remote_folder=/home/nutanix  # /tmp is not writable ensures packer and ansible can run in another dir
-export PKR_VAR_cpu=8
-export PKR_VAR_memory_gb=8192
+# export PKR_VAR_cpu=8
+# export PKR_VAR_memory_gb=8192
 
 nkp create image nutanix rhel-8.10 \
       --cluster PHX-POC207 \
