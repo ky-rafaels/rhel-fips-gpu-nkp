@@ -1,0 +1,149 @@
+{
+  "content_sources": [
+    {
+      "distribution_arch": "x86_64",
+      "distribution_versions": [
+        "8"
+      ],
+      "gpg_key": "-----BEGIN PGP PUBLIC KEY BLOCK-----\n\nmQINBFz3zvsBEADJOIIWllGudxnpvJnkxQz2CtoWI7godVnoclrdl83kVjqSQp+2\ndgxuG5mUiADUfYHaRQzxKw8efuQnwxzU9kZ70ngCxtmbQWGmUmfSThiapOz00018\n+eo5MFabd2vdiGo1y+51m2sRDpN8qdCaqXko65cyMuLXrojJHIuvRA/x7iqOrRfy\na8x3OxC4PEgl5pgDnP8pVK0lLYncDEQCN76D9ubhZQWhISF/zJI+e806V71hzfyL\n/Mt3mQm/li+lRKU25Usk9dWaf4NH/wZHMIPAkVJ4uD4H/uS49wqWnyiTYGT7hUbi\necF7crhLCmlRzvJR8mkRP6/4T/F3tNDPWZeDNEDVFUkTFHNU6/h2+O398MNY/fOh\nyKaNK3nnE0g6QJ1dOH31lXHARlpFOtWt3VmZU0JnWLeYdvap4Eff9qTWZJhI7Cq0\nWm8DgLUpXgNlkmquvE7P2W5EAr2E5AqKQoDbfw/GiWdRvHWKeNGMRLnGI3QuoX3U\npAlXD7v13VdZxNydvpeypbf/AfRyrHRKhkUj3cU1pYkM3DNZE77C5JUe6/0nxbt4\nETUZBTgLgYJGP8c7PbkVnO6I/KgL1jw+7MW6Az8Ox+RXZLyGMVmbW/TMc8haJfKL\nMoUo3TVk8nPiUhoOC0/kI7j9ilFrBxBU5dUtF4ITAWc8xnG6jJs/IsvRpQARAQAB\ntChGZWRvcmEgRVBFTCAoOCkgPGVwZWxAZmVkb3JhcHJvamVjdC5vcmc+iQI4BBMB\nAgAiBQJc9877AhsPBgsJCAcDAgYVCAIJCgsEFgIDAQIeAQIXgAAKCRAh6kWrL4bW\noWagD/4xnLWws34GByVDQkjprk0fX7Iyhpm/U7BsIHKspHLL+Y46vAAGY/9vMvdE\n0fcr9Ek2Zp7zE1RWmSCzzzUgTG6BFoTG1H4Fho/7Z8BXK/jybowXSZfqXnTOfhSF\nalwDdwlSJvfYNV9MbyvbxN8qZRU1z7PEWZrIzFDDToFRk0R71zHpnPTNIJ5/YXTw\nNqU9OxII8hMQj4ufF11040AJQZ7br3rzerlyBOB+Jd1zSPVrAPpeMyJppWFHSDAI\nWK6x+am13VIInXtqB/Cz4GBHLFK5d2/IYspVw47Solj8jiFEtnAq6+1Aq5WH3iB4\nbE2e6z00DSF93frwOyWN7WmPIoc2QsNRJhgfJC+isGQAwwq8xAbHEBeuyMG8GZjz\nxohg0H4bOSEujVLTjH1xbAG4DnhWO/1VXLX+LXELycO8ZQTcjj/4AQKuo4wvMPrv\n9A169oETG+VwQlNd74VBPGCvhnzwGXNbTK/KH1+WRH0YSb+41flB3NKhMSU6dGI0\nSGtIxDSHhVVNmx2/6XiT9U/znrZsG5Kw8nIbbFz+9MGUUWgJMsd1Zl9R8gz7V9fp\nn7L7y5LhJ8HOCMsY/Z7/7HUs+t/A1MI4g7Q5g5UuSZdgi0zxukiWuCkLeAiAP4y7\nzKK4OjJ644NDcWCHa36znwVmkz3ixL8Q0auR15Oqq2BjR/fyog==\n=84m8\n-----END PGP PUBLIC KEY BLOCK-----",
+      "metadata_verification": false,
+      "module_hotfixes": false,
+      "name": "EPEL 8 Everything x86_64",
+      "origin": "community",
+      "snapshot": true,
+      "url": "https://dl.fedoraproject.org/pub/epel/8/Everything/x86_64/"
+    }
+  ],
+  "customizations": {
+    "custom_repositories": [
+      {
+        "baseurl": [
+          "https://dl.fedoraproject.org/pub/epel/8/Everything/x86_64/"
+        ],
+        "check_gpg": true,
+        "check_repo_gpg": false,
+        "gpgkey": [
+          "-----BEGIN PGP PUBLIC KEY BLOCK-----\n\nmQINBFz3zvsBEADJOIIWllGudxnpvJnkxQz2CtoWI7godVnoclrdl83kVjqSQp+2\ndgxuG5mUiADUfYHaRQzxKw8efuQnwxzU9kZ70ngCxtmbQWGmUmfSThiapOz00018\n+eo5MFabd2vdiGo1y+51m2sRDpN8qdCaqXko65cyMuLXrojJHIuvRA/x7iqOrRfy\na8x3OxC4PEgl5pgDnP8pVK0lLYncDEQCN76D9ubhZQWhISF/zJI+e806V71hzfyL\n/Mt3mQm/li+lRKU25Usk9dWaf4NH/wZHMIPAkVJ4uD4H/uS49wqWnyiTYGT7hUbi\necF7crhLCmlRzvJR8mkRP6/4T/F3tNDPWZeDNEDVFUkTFHNU6/h2+O398MNY/fOh\nyKaNK3nnE0g6QJ1dOH31lXHARlpFOtWt3VmZU0JnWLeYdvap4Eff9qTWZJhI7Cq0\nWm8DgLUpXgNlkmquvE7P2W5EAr2E5AqKQoDbfw/GiWdRvHWKeNGMRLnGI3QuoX3U\npAlXD7v13VdZxNydvpeypbf/AfRyrHRKhkUj3cU1pYkM3DNZE77C5JUe6/0nxbt4\nETUZBTgLgYJGP8c7PbkVnO6I/KgL1jw+7MW6Az8Ox+RXZLyGMVmbW/TMc8haJfKL\nMoUo3TVk8nPiUhoOC0/kI7j9ilFrBxBU5dUtF4ITAWc8xnG6jJs/IsvRpQARAQAB\ntChGZWRvcmEgRVBFTCAoOCkgPGVwZWxAZmVkb3JhcHJvamVjdC5vcmc+iQI4BBMB\nAgAiBQJc9877AhsPBgsJCAcDAgYVCAIJCgsEFgIDAQIeAQIXgAAKCRAh6kWrL4bW\noWagD/4xnLWws34GByVDQkjprk0fX7Iyhpm/U7BsIHKspHLL+Y46vAAGY/9vMvdE\n0fcr9Ek2Zp7zE1RWmSCzzzUgTG6BFoTG1H4Fho/7Z8BXK/jybowXSZfqXnTOfhSF\nalwDdwlSJvfYNV9MbyvbxN8qZRU1z7PEWZrIzFDDToFRk0R71zHpnPTNIJ5/YXTw\nNqU9OxII8hMQj4ufF11040AJQZ7br3rzerlyBOB+Jd1zSPVrAPpeMyJppWFHSDAI\nWK6x+am13VIInXtqB/Cz4GBHLFK5d2/IYspVw47Solj8jiFEtnAq6+1Aq5WH3iB4\nbE2e6z00DSF93frwOyWN7WmPIoc2QsNRJhgfJC+isGQAwwq8xAbHEBeuyMG8GZjz\nxohg0H4bOSEujVLTjH1xbAG4DnhWO/1VXLX+LXELycO8ZQTcjj/4AQKuo4wvMPrv\n9A169oETG+VwQlNd74VBPGCvhnzwGXNbTK/KH1+WRH0YSb+41flB3NKhMSU6dGI0\nSGtIxDSHhVVNmx2/6XiT9U/znrZsG5Kw8nIbbFz+9MGUUWgJMsd1Zl9R8gz7V9fp\nn7L7y5LhJ8HOCMsY/Z7/7HUs+t/A1MI4g7Q5g5UuSZdgi0zxukiWuCkLeAiAP4y7\nzKK4OjJ644NDcWCHa36znwVmkz3ixL8Q0auR15Oqq2BjR/fyog==\n=84m8\n-----END PGP PUBLIC KEY BLOCK-----"
+        ],
+        "id": "b0df9ce1-300f-4b50-b5af-b579f2bfe9ec",
+        "name": "EPEL 8 Everything x86_64"
+      }
+    ],
+    "filesystem": [
+      {
+        "min_size": 10737418240,
+        "mountpoint": "/"
+      },
+      {
+        "min_size": 1073741824,
+        "mountpoint": "/home"
+      },
+      {
+        "min_size": 1073741824,
+        "mountpoint": "/tmp"
+      },
+      {
+        "min_size": 3221225472,
+        "mountpoint": "/var"
+      },
+      {
+        "min_size": 5368709120,
+        "mountpoint": "/var/log"
+      },
+      {
+        "min_size": 10737418240,
+        "mountpoint": "/var/log/audit"
+      },
+      {
+        "min_size": 1073741824,
+        "mountpoint": "/var/tmp"
+      }
+    ],
+    "fips": {
+      "enabled": true
+    },
+    "hostname": "rhel-fips-gpu",
+    "kernel": {
+      "append": "slub_debug=P page_poison=1 vsyscall=none pti=on audit_backlog_limit=8192 audit=1 nouveau.modeset=0"
+    },
+    "locale": {
+      "languages": [
+        "C.UTF-8",
+        "en_US.UTF-8"
+      ]
+    },
+    "openscap": {
+      "profile_id": "xccdf_org.ssgproject.content_profile_stig"
+    },
+    "packages": [
+      "aide",
+      "rng-tools",
+      "tmux",
+      "opensc",
+      "openssl-pkcs11",
+      "audit",
+      "rsyslog-gnutls",
+      "rsyslog",
+      "firewalld",
+      "policycoreutils",
+      "fapolicyd",
+      "mailx",
+      "postfix",
+      "openssh-server",
+      "kernel-devel",
+      "kernel-headers",
+      "gcc",
+      "make",
+      "dkms",
+      "epel-release",
+      "libnvidia-container-tools",
+      "usbguard"
+    ],
+    "payload_repositories": [
+      {
+        "baseurl": "https://dl.fedoraproject.org/pub/epel/8/Everything/x86_64/",
+        "check_gpg": true,
+        "check_repo_gpg": false,
+        "gpgkey": "-----BEGIN PGP PUBLIC KEY BLOCK-----\n\nmQINBFz3zvsBEADJOIIWllGudxnpvJnkxQz2CtoWI7godVnoclrdl83kVjqSQp+2\ndgxuG5mUiADUfYHaRQzxKw8efuQnwxzU9kZ70ngCxtmbQWGmUmfSThiapOz00018\n+eo5MFabd2vdiGo1y+51m2sRDpN8qdCaqXko65cyMuLXrojJHIuvRA/x7iqOrRfy\na8x3OxC4PEgl5pgDnP8pVK0lLYncDEQCN76D9ubhZQWhISF/zJI+e806V71hzfyL\n/Mt3mQm/li+lRKU25Usk9dWaf4NH/wZHMIPAkVJ4uD4H/uS49wqWnyiTYGT7hUbi\necF7crhLCmlRzvJR8mkRP6/4T/F3tNDPWZeDNEDVFUkTFHNU6/h2+O398MNY/fOh\nyKaNK3nnE0g6QJ1dOH31lXHARlpFOtWt3VmZU0JnWLeYdvap4Eff9qTWZJhI7Cq0\nWm8DgLUpXgNlkmquvE7P2W5EAr2E5AqKQoDbfw/GiWdRvHWKeNGMRLnGI3QuoX3U\npAlXD7v13VdZxNydvpeypbf/AfRyrHRKhkUj3cU1pYkM3DNZE77C5JUe6/0nxbt4\nETUZBTgLgYJGP8c7PbkVnO6I/KgL1jw+7MW6Az8Ox+RXZLyGMVmbW/TMc8haJfKL\nMoUo3TVk8nPiUhoOC0/kI7j9ilFrBxBU5dUtF4ITAWc8xnG6jJs/IsvRpQARAQAB\ntChGZWRvcmEgRVBFTCAoOCkgPGVwZWxAZmVkb3JhcHJvamVjdC5vcmc+iQI4BBMB\nAgAiBQJc9877AhsPBgsJCAcDAgYVCAIJCgsEFgIDAQIeAQIXgAAKCRAh6kWrL4bW\noWagD/4xnLWws34GByVDQkjprk0fX7Iyhpm/U7BsIHKspHLL+Y46vAAGY/9vMvdE\n0fcr9Ek2Zp7zE1RWmSCzzzUgTG6BFoTG1H4Fho/7Z8BXK/jybowXSZfqXnTOfhSF\nalwDdwlSJvfYNV9MbyvbxN8qZRU1z7PEWZrIzFDDToFRk0R71zHpnPTNIJ5/YXTw\nNqU9OxII8hMQj4ufF11040AJQZ7br3rzerlyBOB+Jd1zSPVrAPpeMyJppWFHSDAI\nWK6x+am13VIInXtqB/Cz4GBHLFK5d2/IYspVw47Solj8jiFEtnAq6+1Aq5WH3iB4\nbE2e6z00DSF93frwOyWN7WmPIoc2QsNRJhgfJC+isGQAwwq8xAbHEBeuyMG8GZjz\nxohg0H4bOSEujVLTjH1xbAG4DnhWO/1VXLX+LXELycO8ZQTcjj/4AQKuo4wvMPrv\n9A169oETG+VwQlNd74VBPGCvhnzwGXNbTK/KH1+WRH0YSb+41flB3NKhMSU6dGI0\nSGtIxDSHhVVNmx2/6XiT9U/znrZsG5Kw8nIbbFz+9MGUUWgJMsd1Zl9R8gz7V9fp\nn7L7y5LhJ8HOCMsY/Z7/7HUs+t/A1MI4g7Q5g5UuSZdgi0zxukiWuCkLeAiAP4y7\nzKK4OjJ644NDcWCHa36znwVmkz3ixL8Q0auR15Oqq2BjR/fyog==\n=84m8\n-----END PGP PUBLIC KEY BLOCK-----",
+        "id": "b0df9ce1-300f-4b50-b5af-b579f2bfe9ec",
+        "rhsm": false
+      }
+    ],
+    "services": {
+      "enabled": [
+        "usbguard",
+        "sshd",
+        "rngd",
+        "fapolicyd",
+        "firewalld",
+        "rsyslog",
+        "auditd"
+      ],
+      "masked": [
+        "kdump",
+        "autofs",
+        "debug-shell"
+      ]
+    },
+    "timezone": {
+      "timezone": "US/Central"
+    },
+    "users": [
+      {
+        "groups": [
+          "wheel"
+        ],
+        "hasPassword": true,
+        "name": "nutanix"
+      }
+    ]
+  },
+  "description": "",
+  "distribution": "rhel-8",
+  "metadata": {
+    "exported_at": "2025-11-19 01:11:21.988917093 +0000 UTC",
+    "is_on_prem": false,
+    "parent_id": "6a8ec582-ca82-4a07-8001-bd261745f5a5"
+  },
+  "name": "rhel-8-x86_64-11182025-1848"
+}
