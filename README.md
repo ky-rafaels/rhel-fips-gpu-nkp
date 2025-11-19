@@ -11,11 +11,16 @@
 5. Run nkp create image command
 
 ```bash
-export ANSIBLE_REMOTE_USER=nutanix
-export ANSIBLE_PASSWORD="<redacted>"
 export PKR_VAR_remote_folder=/home/nutanix  # /tmp is not writable ensures packer and ansible can run in another dir
 # export PKR_VAR_cpu=8
 # export PKR_VAR_memory_gb=8192
+
+cat << EOF > user-override.yaml
+---
+packer:
+  ssh_username: "nutanix"
+  ssh_password: "<password>"
+EOF
 
 nkp create image nutanix rhel-8.10 \
       --cluster PHX-POC207 \
@@ -24,7 +29,8 @@ nkp create image nutanix rhel-8.10 \
       --insecure \
       --artifacts-directory ./artifacts/ \
       --fips \
-      --source-image rhel-8.10-x86_64-fips-stig.qcow2
+      --source-image rhel-8.10-x86_64-fips-stig.qcow2 \
+      --overrides user-override.yaml
 ```
 
 
