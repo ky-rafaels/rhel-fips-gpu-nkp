@@ -8,26 +8,6 @@
 
 # Run composer-cli in a container to build node images
 
-On Ubuntu host
-```bash
-docker pull quay.io/osbuild/osbuild-composer:fedora-latest
-docker run --name composer \
-  --privileged \
-  --volume /var/lib/osbuild-composer:/var/lib/osbuild-composer:z \
-  --volume /etc/osbuild-composer:/etc/osbuild-composer:z \
-  --volume /tmp:/tmp:z \
-  --network=host \
-  quay.io/osbuild/osbuild-composer:fedora-latest
-
-docker exec -it composer bash
-# inside container:
-composer-cli blueprints list
-composer-cli blueprints push my-blueprint.toml
-composer-cli compose start my-blueprint qcow2
-composer-cli compose status
-```
-
-
 
 4. Download and import into prism central (in this case I imported image named rhel-8.10-x86_64-fips-stig.qcow2)
 5. Boot VM from image and remount /tmp to make writable
@@ -59,16 +39,3 @@ nkp create image nutanix rhel-8.10 \
       --source-image rhel-8.10-x86_64-fips-stig.qcow2 \
       --overrides user-override.yaml
 ```
-
-
-
-<!-- 1. Spin up a rhel based vm you can run composer-cli from
-
-2. Use composer-cli to build the blueprint
-
-```bash
-composer-cli blueprints push blueprints/rhel-8-fips-gpu-blueprint.json
-composer-cli compose start gpu-rhel8.10 qcow2
-composer-cli compose image <UUID> -->
-```
-
