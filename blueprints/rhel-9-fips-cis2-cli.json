@@ -1,0 +1,56 @@
+{
+  "name": "rhel-9-x86_64-20260210-1120",
+  "description": "RHEL 9 with FIPS, CIS, and customizations",
+  "version": "0.0.1",
+  "distro": "rhel-9",
+  "packages": [
+    "aide", "sudo", "libpwquality", "systemd-journal-remote",
+    "firewalld", "nftables", "libselinux", "cronie", "chrony",
+    "audit-libs", "audit"
+  ],
+  "customizations": {
+    "filesystem": [
+      { "mountpoint": "/",           "minsize": 10737418240 },
+      { "mountpoint": "/home",       "minsize": 1073741824  },
+      { "mountpoint": "/tmp",        "minsize": 1073741824  },
+      { "mountpoint": "/var",        "minsize": 3221225472  },
+      { "mountpoint": "/var/log",    "minsize": 1073741824  },
+      { "mountpoint": "/var/log/audit", "minsize": 10737418240 },
+      { "mountpoint": "/var/tmp",    "minsize": 1073741824  }
+    ],
+    "fips": true,
+    "kernel": {
+      "append": "audit_backlog_limit=8192 audit=1"
+    },
+    "locale": {
+      "languages": ["C.UTF-8"]
+    },
+    "openscap": {
+      "profile_id": "xccdf_org.ssgproject.content_profile_cis"
+    },
+    "services": {
+      "enabled": ["auditd", "crond", "firewalld", "systemd-journald"],
+      "masked": ["cups", "nfs-server", "rpcbind", "avahi-daemon", "autofs", "bluetooth", "nftables"]
+    },
+    "timezone": {
+      "timezone": "Etc/UTC"
+    },
+    "users": [
+      {
+        "name": "nutanix",
+        "groups": ["wheel"]
+      }
+    ],
+    "repositories": [
+      {
+        "id": "epel-9-everything",
+        "name": "EPEL 9 Everything x86_64",
+        "baseurls": ["https://dl.fedoraproject.org/pub/epel/9/Everything/x86_64/"],
+        "gpgkeys": ["-----BEGIN PGP PUBLIC KEY BLOCK----- ... (your full key here) -----END PGP PUBLIC KEY BLOCK-----"],
+        "gpgcheck": true,
+        "repo_gpgcheck": false,
+        "enabled": true
+      }
+    ]
+  }
+}
