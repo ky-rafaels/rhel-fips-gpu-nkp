@@ -19,7 +19,7 @@
     "timezone": {
       "timezone": "Etc/UTC"
     },
-    "users": [
+    "user": [
       {
         "name": "admin",
         "key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIB7Qo+39rYR56U4yWhVIXKFY+RQNfjTxcnNcglVTv7+O root@kyle-bastion",
