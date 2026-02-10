@@ -1,0 +1,12 @@
+{
+  "redhat": {
+    "subscription": {
+      "activation_key": "1583ae13-7ae7-41e5-83d6-62414c50db59",
+      "organization": "11198486",
+      "server_url": "",
+      "base_url": "",
+      "insights": false,
+      "rhc": true
+    }
+  }
+}
