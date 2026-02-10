@@ -31,31 +31,31 @@
     ],
     "filesystem": [
       {
-        "min_size": 10737418240,
+        "min_size": "10 GiB",
         "mountpoint": "/"
       },
       {
-        "min_size": 1073741824,
+        "min_size": "1 GiB",
         "mountpoint": "/home"
       },
       {
-        "min_size": 1073741824,
+        "min_size": "1 GiB",
         "mountpoint": "/tmp"
       },
       {
-        "min_size": 3221225472,
+        "min_size": "3 GiB",
         "mountpoint": "/var"
       },
       {
-        "min_size": 1073741824,
+        "min_size": "1 GiB",
         "mountpoint": "/var/log"
       },
       {
-        "min_size": 10737418240,
+        "min_size": "10 GiB",
         "mountpoint": "/var/log/audit"
       },
       {
-        "min_size": 1073741824,
+        "min_size": "1 GiB",
         "mountpoint": "/var/tmp"
       }
     ],
